@@ -1,0 +1,23 @@
+1. move the application and the system folder outside the public:: for security reasons
+2. seperate the production and development environment in the public/index.php file
+3. create the .htacess file
+4. copy application/database.php in 2 new folders development and production folder and provide different database info
+5. create a config file cms_config.php
+6. add cms_config and database(libraries) in the autoload.php file
+7. create a MY_Controller(in core folder) that extends CI_Controller, and Frontend_Controller and Admin_Controller that extends MY_Controller( in libraries folder)
+8. since the Frontend_Controller and Admin_Controller are in different folder there will be an error so to fix the problem create an autoload function in config.php file with following code snippit
+<snippit>
+function __autoload($classname){
+  if(strpos($classname,'CI_')!== 0){
+    $file = APPPATH . "libraries/". $classname .".php";
+    if(file_exists($file) and is_file($file)){
+      include_once($file);
+    }
+  }
+}
+
+</snippit>
+
+9. create a migrations folder in application
+10.create a migration.php file in the controller/admin
+11. create 001_Class_name.php file to create the migration files that create the tables in the database

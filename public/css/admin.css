@@ -1,0 +1,37 @@
+
+
+.mjs-nestedSortable-error {
+	background: #000; border-color: transparent;
+	color: white;
+}
+
+ol {
+	margin: 0; padding: 0; padding-left: 30px;
+	color: white;
+}
+
+ol.sortable,ol.sortable ol {
+	margin: 5px 0 0 40px; padding: 0; list-style-type: none;
+	color: white;
+}
+
+ol.sortable {
+	margin: 4em 0;
+	color: white;
+}
+
+.sortable li {
+	margin: 3px 0 0 0; padding: 0;
+	color: white;
+	font: san-serif;
+	font-weight: bold;
+	font-size: 14;
+}
+
+.sortable li div {
+	border: 1px solid #003300; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border-color: #D4D4D4 #D4D4D4 #BCBCBC; padding: 6px; margin: 0; cursor: move; background: #00ff00; background: -moz-linear-gradient(top, #888 0%, #f6f6f6 47%, #aaa 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#888), color-stop(47%, #f6f6f6), color-stop(100%, #aaa) ); background: -webkit-linear-gradient(top, #888 0%, #999 47%, #aaa 100%); background: -o-linear-gradient(top, #888 0%, #999 47%, #aaa 100%); background: -ms-linear-gradient(top, #888 0%, #999 47%, #aaa 100%);
+	background: linear-gradient(top, #888 0%, #999 47%, #aaa 100%); filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#888', endColorstr = '#aaa', GradientType = 0 );
+
+	width: 60%;
+}

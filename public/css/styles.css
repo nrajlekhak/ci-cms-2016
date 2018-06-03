@@ -1,0 +1,4 @@
+ul.nav li.dropdown:hover ul.dropdown-menu{
+  display: block;
+}
+p.pubdate{font-style: italic; font-size: 0.9em;  border-radius: 5px; padding: 2px 5px; color: white; display: inline-block; text-align: right; font-family: sans-serif; background-color: #999;}
